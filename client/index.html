@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MindSpark'23 Certificate</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="favicon" href="favicon.ico" />
+    </head>
+
+    <body>
+        <div class="alert alert-danger alert-dismissible" id="alertjs">
+            <button
+                type="button"
+                class="close"
+                onclick="this.parentElement.style.display='none';"
+                data-dismiss="alert"
+            >
+                &times;
+            </button>
+            <strong>Oops!</strong> It seems you have entered the wrong phone
+            number, Please enter the phone number you used for registration
+        </div>
+        <div class="panel">
+            <div class="state">
+                <br />
+                <img src="./logo.png" alt="Mindspark logo" />
+                <!-- <br /> -->
+                <!-- <h1>MindSpark'23</h1> -->
+            </div>
+
+            <div class="form">
+                <input
+                    required
+                    type="text"
+                    name="Phone"
+                    placeholder="Phone number"
+                    id="phone"
+                    minlength="10"
+                    maxlength="10"
+                />
+                <div id="submitBtn" class="submit">Get Certificate</div>
+            </div>
+            <div style="color: aliceblue; padding: 30px" id="alertjs">
+                Enter your Phone number used for registering for the events of
+                MindSpark'23
+            </div>
+        </div>
+        <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+        <script src="./FileSaver.js"></script>
+        <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    </body>
+</html>
+

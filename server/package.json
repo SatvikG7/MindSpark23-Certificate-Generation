@@ -1,0 +1,13 @@
+{
+  "name": "MindSpark23-Certificate-Generation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:SatvikG7/MindSpark23-Certificate-Generation.git",
+  "author": "Satvik Gaikwad <satvik.g.code@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.2.0"
+  }
+}
